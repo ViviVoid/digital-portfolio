@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/digital-portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/digital-portfolio/static/js/main.07264744.js",
+    "main.css": "/digital-portfolio/static/css/main.984d4598.css",
+    "main.js": "/digital-portfolio/static/js/main.d2ad3a69.js",
     "static/js/453.227f349f.chunk.js": "/digital-portfolio/static/js/453.227f349f.chunk.js",
-    "static/media/logo.svg": "/digital-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/figma-overview.svg": "/digital-portfolio/static/media/figma-overview.151cf7db198e6a6705f5fd67501cfec5.svg",
+    "static/media/profSmaller.jpg": "/digital-portfolio/static/media/profSmaller.fa423969c8c585f6b7eb.jpg",
+    "static/media/headerBackground.png": "/digital-portfolio/static/media/headerBackground.f2d0ba5479dfaea447ff.png",
+    "static/media/WordleApp.png": "/digital-portfolio/static/media/WordleApp.3cbf3cf05814e14344ab.png",
+    "static/media/ASDHackathonSite.png": "/digital-portfolio/static/media/ASDHackathonSite.51c67aaab373e408ea1d.png",
+    "static/media/DaoLogo.png": "/digital-portfolio/static/media/DaoLogo.1cfd3844e99306f1d800.png",
+    "static/media/ArrowUp.png": "/digital-portfolio/static/media/ArrowUp.8449627e71e2027e8cd4.png",
+    "static/media/MAIC_Logo.png": "/digital-portfolio/static/media/MAIC_Logo.502d9de1f2927c3f6be9.png",
+    "static/media/github-mark.svg": "/digital-portfolio/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "index.html": "/digital-portfolio/index.html",
-    "main.f855e6bc.css.map": "/digital-portfolio/static/css/main.f855e6bc.css.map",
-    "main.07264744.js.map": "/digital-portfolio/static/js/main.07264744.js.map",
+    "main.984d4598.css.map": "/digital-portfolio/static/css/main.984d4598.css.map",
+    "main.d2ad3a69.js.map": "/digital-portfolio/static/js/main.d2ad3a69.js.map",
     "453.227f349f.chunk.js.map": "/digital-portfolio/static/js/453.227f349f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.07264744.js"
+    "static/css/main.984d4598.css",
+    "static/js/main.d2ad3a69.js"
   ]
 }
