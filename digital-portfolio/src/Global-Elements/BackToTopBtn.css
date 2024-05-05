@@ -1,16 +1,15 @@
 .scrollToTop {
     /*height: 1em;*/
     /*width: 1em;*/
-    width: 25%;
-    /*position: fixed;*/
-    z-index: 1;
-    /*bottom: 0;*/
-    /*left: 3%;*/
-    padding: 1em;
-    margin: 1em;
-    background-color: black;
-    border-radius: 5px;
-    /*margin: 1em 1em 0;*/
+    opacity: 0.2;
+    width: 5%;
+    position: fixed;
+    bottom: 0;
+    /*z-index: 1;*/
+    /*padding: 1em;*/
+    margin: 3.25%;
+    /*background-color: black;*/
+    /*border-radius: 5px;*/
 
     /*transition: transform 0.4s;*/
     /*-webkit-transition: -webkit-transform 0.4s;*/

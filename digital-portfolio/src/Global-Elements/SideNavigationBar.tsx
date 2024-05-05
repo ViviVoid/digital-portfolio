@@ -21,11 +21,11 @@ const SideNavigationBar: React.FC = () => (
        <Link to="/Contact" className={"Side-Navigation-Item"}>
            Contact Me
         </Link>
-       <Link to="https://www.linkedin.com/in/aqd453/overlay/1714361822002/single-media-viewer/?profileId=ACoAAD4rGP4BtgLUi4EXk_2AfRhcp1THaAA0-IE" className={"Side-Navigation-Item"}>
+       <Link to="https://www.linkedin.com/in/aqd453/details/featured/1714940777634/single-media-viewer/?profileId=ACoAAD4rGP4BtgLUi4EXk_2AfRhcp1THaAA0-IE" className={"Side-Navigation-Item"}>
            Resume
        </Link>
 
-       <BackToTopBtn/>
+       {/*<BackToTopBtn/>*/}
    </div>
 );
 

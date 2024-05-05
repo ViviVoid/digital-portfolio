@@ -14,6 +14,12 @@
     align-items: center;
     text-align: center;
 
+    /* Picture Background */
+    /*color: white !important;*/
+    background-image: url(/public/headerBackground.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
 }
 
 .Side-Navigation-Item {

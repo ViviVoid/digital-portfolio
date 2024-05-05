@@ -10,10 +10,9 @@ import ProjectRoute from "./Projects/ProjectInDepth/ProjectRoute";
 import BackToTopBtn from "./Global-Elements/BackToTopBtn";
 
 const App: React.FC = () => {
-    console.log("Got here...");
-    console.log(process.env.PUBLIC_URL);
     return (
         <HashRouter>
+
             <div id={"sideBar"}>
                 <SideNavigationBar/>
             </div>
