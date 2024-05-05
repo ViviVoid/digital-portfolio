@@ -24,7 +24,7 @@ const App: React.FC = () => {
                 <Route path="/Contact" element={<Contact/>}/>
                 <Route path="/Resume" element={<Resume/>}/>
             </Routes>
-            <BackToTopBtn/>
+            {/*<BackToTopBtn/>*/}
         </HashRouter>
     );
 }

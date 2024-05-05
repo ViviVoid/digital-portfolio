@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "../styles/SideNavigationBar.css"
 import logo from "../DaoLogo.png";
+import BackToTopBtn from "./BackToTopBtn";
 
 const SideNavigationBar: React.FC = () => (
    <div className={"Side-Navigation-Bar"}>
@@ -23,6 +24,8 @@ const SideNavigationBar: React.FC = () => (
        <Link to="https://www.linkedin.com/in/aqd453/overlay/1714361822002/single-media-viewer/?profileId=ACoAAD4rGP4BtgLUi4EXk_2AfRhcp1THaAA0-IE" className={"Side-Navigation-Item"}>
            Resume
        </Link>
+
+       <BackToTopBtn/>
    </div>
 );
 
