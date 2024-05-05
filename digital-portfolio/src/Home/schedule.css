@@ -1,0 +1,280 @@
+/* https://css-tricks.com/building-a-conference-schedule-with-css-grid/ utilized to help create this */
+.schedule {
+    border: 5px grey double;
+    width: 90%;
+    padding: 1em;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-rows:
+        [days] 2em
+        [time-0800] 1fr
+        [time-0900] 1fr
+        [time-1000] 1fr
+        [time-1100] 1fr
+        [time-1200] 1fr
+        [time-1300] 1fr
+        [time-1400] 1fr
+        [time-1500] 1fr
+        [time-1600] 1fr
+        [time-1700] 1fr
+        [time-1800] 1fr
+        [time-1900] 1fr
+        [time-2000] 1fr
+        [time-2100] 1fr
+        [time-2200] 1fr;
+    grid-template-columns:
+        [times] 10%
+        [sunday] 1fr
+        [monday] 1fr
+        [tuesday] 1fr
+        [wednesday] 1fr
+        [thursday] 1fr
+        [friday] 1fr
+        [saturday] 1fr;
+    grid-auto-flow: dense;
+
+    animation: 1s ease-in-out 0s 1 fade-up;
+}
+
+.scheduleHeader {
+    animation: 1s ease-in-out 0s 1 fade-up;
+}
+
+.schedule h3 {
+    border-radius: 5px;
+    border-width: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule div {
+    border-radius: 5px;
+    border-width: 0.1em;
+    height: 85%;
+    width: 90%;
+    justify-self: center;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    animation: 1s ease-in-out 0s 1 loading-animation;
+}
+
+.time-slot {
+    font-size: 0.5em;
+    text-align: center;
+    grid-column: times;
+    border-style: ridge;
+    height: 60%;
+    width: 90%;
+    justify-self: center;
+    background-color: white;
+}
+
+.day-slot {
+    font-size: 0.8em;
+    grid-row: days;
+    border-style: ridge;
+    height: 60%;
+    width: 90%;
+    justify-self: center;
+    background-color: lightgray;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Days Classes */
+.monday {
+    grid-column: monday;
+}
+
+.tuesday {
+    grid-column: tuesday;
+}
+
+.wednesday {
+    grid-column: wednesday;
+}
+
+.thursday {
+    grid-column: thursday;
+}
+
+.friday {
+    grid-column: friday;
+}
+
+/* Free Hour */
+
+.FreeHour {
+    background-color: grey;
+    border: darkgray solid;
+    color: white;
+    grid-row: time-1200 / time-1300;
+}
+
+#FreeHourTue {
+    grid-column: tuesday;
+}
+
+#FreeHourThu {
+    grid-column: thursday;
+}
+
+/* Anchor Hyperlinks */
+a {
+    text-decoration: none black;
+    color: inherit;
+    background-size: 200%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+
+}
+
+a:hover {
+    text-decoration: none;
+    animation: 1s ease-in-out infinite highlight forwards;
+    -moz-animation: 1s ease-in-out infinite highlight forwards;
+    -webkit-animation: 1s ease-in-out infinite highlight forwards;
+}
+
+.schedule div a:hover {
+    text-decoration: none;
+    /*animation: 1s ease-in-out infinite highlight forwards;*/
+    /*-moz-animation: 1s ease-in-out infinite highlight forwards;*/
+    /*-webkit-animation: 1s ease-in-out infinite highlight forwards;*/
+    animation: 1s ease-in-out 0s 1 fade-up-href;
+
+}
+
+/* Empty Styling */
+.empty {
+    border-style: ridge;
+    height: 90%;
+    background-color: white;
+}
+
+/* Start */
+.start-8 {
+    grid-row-start: time-0800;
+}
+
+.start-9 {
+    grid-row-start: time-0900;
+}
+
+.start-10 {
+    grid-row-start: time-1000;
+}
+
+.start-11 {
+    grid-row-start: time-1100;
+}
+
+.start-12 {
+    grid-row-start: time-1200;
+}
+
+.start-13 {
+    grid-row-start: time-1300;
+}
+
+.start-14 {
+    grid-row-start: time-1400;
+}
+
+.start-15 {
+    grid-row-start: time-1500;
+}
+
+.start-16 {
+    grid-row-start: time-1600;
+}
+
+.start-17 {
+    grid-row-start: time-1700;
+}
+
+.start-18 {
+    grid-row-start: time-1800;
+}
+
+.start-19 {
+    grid-row-start: time-1900;
+}
+
+.start-20 {
+    grid-row-start: time-2000;
+}
+
+/* end */
+.end-8 {
+    grid-row-end: time-0800;
+}
+
+.end-9 {
+    grid-row-end: time-0900;
+}
+
+.end-10 {
+    grid-row-end: time-1000;
+}
+
+.end-11 {
+    grid-row-end: time-1100;
+}
+
+.end-12 {
+    grid-row-end: time-1200;
+}
+
+.end-13 {
+    grid-row-end: time-1300;
+}
+
+.end-14 {
+    grid-row-end: time-1400;
+}
+
+.end-15 {
+    grid-row-end: time-1500;
+}
+
+.end-16 {
+    grid-row-end: time-1600;
+}
+
+.end-17 {
+    grid-row-end: time-1700;
+}
+
+.end-18 {
+    grid-row-end: time-1800;
+}
+
+.end-19 {
+    grid-row-end: time-1900;
+}
+
+.end-20 {
+    grid-row-end: time-2000;
+}
+
+/* Schedule Specific */
+.Triangle  {
+    color: white;
+    background-color: darkslategray;
+    border: black solid;
+}
+
+.scheduleEntry {
+    background-color: ivory;
+    border: black solid;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}

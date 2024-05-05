@@ -1,0 +1,30 @@
+.scrollToTop {
+    height: 4em;
+    width: 5%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+    padding: 1em;
+    margin: 1em 1em 1.2em;
+
+    transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 0.4s;
+
+    /*padding: 0.5em;*/
+    /*transition: .5s ease;*/
+    /*overflow-x: hidden;*/
+    /*padding-top: 20px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*text-align: center;*/
+}
+.scrollToTop:hover {
+    transform: translate(0, -5.4em);
+    -webkit-transform: translate(0, -5.4em);
+}
+
+.scrollToTopImage {
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+.ProjectFigure {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.ProjectFigure img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contentPage {
+    display:flex;
+    flex-direction: column;
+}

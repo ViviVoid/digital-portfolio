@@ -1,0 +1,68 @@
+.Side-Navigation-Bar {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#232323;
+    transition: .5s ease;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Side-Navigation-Item {
+    color: black;
+    background-color: white;
+    font-size: large;
+    width: 80%;
+    margin: 0.5em;
+
+    border-radius: 5px;
+    border-bottom-color: ivory;
+    border-bottom-width: 10px;
+    border-bottom-style: ridge;
+
+    box-shadow: 0 4px 8px 0 darkslateblue, 0 6px 20px 0 black;
+    transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 0.4s;
+
+    /*animation-name: highlight;*/
+    /*animation-duration: 1.5s;*/
+    /*animation-fill-mode: forwards;*/
+    /*background-size: 200%;*/
+    /*background-image: linear-gradient(to right, slategrey 0%, transparent 100%),*/
+    /*linear-gradient(darkslateblue, navy);*/
+}
+
+.Side-Navigation-Item:hover {
+    /*animation: 1s ease-in-out infinite highlight forwards;*/
+    /*-moz-animation: 1s ease-in-out infinite highlight forwards;*/
+    /*-webkit-animation: 1s ease-in-out infinite highlight forwards;*/
+    box-shadow: 0 4px 16px 0 darkcyan, 0 6px 60px 0 black;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+@keyframes highlight {
+    0% {
+        background-position: 0;
+    }
+
+    40% {
+        background-position: -100%;
+    }
+
+    75% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position:0;
+    }
+}
