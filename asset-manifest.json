@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digital-portfolio/static/css/main.effb43a5.css",
-    "main.js": "/digital-portfolio/static/js/main.4bed223b.js",
+    "main.css": "/digital-portfolio/static/css/main.10e245a6.css",
+    "main.js": "/digital-portfolio/static/js/main.4c83be49.js",
     "static/js/453.227f349f.chunk.js": "/digital-portfolio/static/js/453.227f349f.chunk.js",
     "static/media/figma-overview.svg": "/digital-portfolio/static/media/figma-overview.151cf7db198e6a6705f5fd67501cfec5.svg",
     "static/media/profSmaller.jpg": "/digital-portfolio/static/media/profSmaller.fa423969c8c585f6b7eb.jpg",
@@ -9,16 +9,15 @@
     "static/media/WordleApp.png": "/digital-portfolio/static/media/WordleApp.3cbf3cf05814e14344ab.png",
     "static/media/ASDHackathonSite.png": "/digital-portfolio/static/media/ASDHackathonSite.51c67aaab373e408ea1d.png",
     "static/media/DaoLogo.png": "/digital-portfolio/static/media/DaoLogo.1cfd3844e99306f1d800.png",
-    "static/media/ArrowUp.png": "/digital-portfolio/static/media/ArrowUp.8449627e71e2027e8cd4.png",
     "static/media/MAIC_Logo.png": "/digital-portfolio/static/media/MAIC_Logo.502d9de1f2927c3f6be9.png",
     "static/media/github-mark.svg": "/digital-portfolio/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "index.html": "/digital-portfolio/index.html",
-    "main.effb43a5.css.map": "/digital-portfolio/static/css/main.effb43a5.css.map",
-    "main.4bed223b.js.map": "/digital-portfolio/static/js/main.4bed223b.js.map",
+    "main.10e245a6.css.map": "/digital-portfolio/static/css/main.10e245a6.css.map",
+    "main.4c83be49.js.map": "/digital-portfolio/static/js/main.4c83be49.js.map",
     "453.227f349f.chunk.js.map": "/digital-portfolio/static/js/453.227f349f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.effb43a5.css",
-    "static/js/main.4bed223b.js"
+    "static/css/main.10e245a6.css",
+    "static/js/main.4c83be49.js"
   ]
 }
