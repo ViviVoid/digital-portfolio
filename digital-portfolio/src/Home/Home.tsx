@@ -15,7 +15,7 @@ const Home:React.FC = () => (
             <AboutMeAndValues />
             <Schedule />
             <div className={"Attribution"}>
-                Attribution to background image by Image by
+                Attribution to background image by
                  <Link to="https://www.freepik.com/free-vector/gradient-black-background-with-cubes_19852467.htm#page=2&query=isometric%20background&position=16&from_view=keyword&track=ais&uuid=f85b52c8-13a2-451b-9a69-6eb29ce6f5bc"> Freepik </Link>
                 for Background Image
             </div>
