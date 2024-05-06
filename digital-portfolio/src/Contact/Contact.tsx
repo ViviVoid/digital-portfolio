@@ -118,13 +118,13 @@ const Contact: React.FC = () => {
                             Connect here through my socials!
                         </h4>
                         <div className={"socialEntryList"}>
-                            <Link to={"https://www.linkedin.com/in/aqd453/"}>
+                            <Link to={"https://www.linkedin.com/in/aqd453/"} target="_blank" rel="noopener noreferrer">
                                 <div className={"socialEntry"}>
                                     <img className={"socialEntryImage"} src={linkedInLogo}  alt={"Linked In Logo"}/>
                                     <p className={"socialEntryTitle"}>LinkedIn</p>
                                 </div>
                             </Link>
-                            <Link to={"https://github.com/ViviVoid"}>
+                            <Link to={"https://github.com/ViviVoid"} target="_blank" rel="noopener noreferrer">
                             <div className={"socialEntry"}>
                                 <img className={"socialEntryImage"} src={githubLogo}  alt={"GitHub Logo"}/>
                                 <p className={"socialEntryTitle"}>Github</p>
