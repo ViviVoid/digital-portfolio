@@ -16,7 +16,8 @@ const Home:React.FC = () => (
             <Schedule />
             <div className={"Attribution"}>
                 Attribution to background image by
-                 <Link to="https://www.freepik.com/free-vector/gradient-black-background-with-cubes_19852467.htm#page=2&query=isometric%20background&position=16&from_view=keyword&track=ais&uuid=f85b52c8-13a2-451b-9a69-6eb29ce6f5bc"> Freepik </Link>
+                 <Link target="_blank" rel="noopener noreferrer" to="https://www.freepik.com/free-vector/gradient-black-background-with-cubes_19852467.htm#page=2&query=isometric%20background&position=16&from_view=keyword&track=ais&uuid=f85b52c8-13a2-451b-9a69-6eb29ce6f5bc"> Freepik </Link>
+                and gold gradient background <Link target="_blank" rel="noopener noreferrer" to="https://www.freepik.com/free-vector/gradient-black-backgrounds-with-golden-frames_19852267.htm#from_view=detail_serie"> Freepik </Link>
                 for Background Image
             </div>
         </div>

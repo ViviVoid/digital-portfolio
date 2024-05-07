@@ -30,7 +30,7 @@ const Schedule:React.FC = () => {
                 <h3 className="time-slot">10:00 PM</h3>
 
 
-                <h3 className="day-slot">  </h3>
+                <h3 className="day-slot"> Times </h3>
                 <h3 className="day-slot">Sunday</h3>
                 <h3 className="day-slot">Monday</h3>
                 <h3 className="day-slot">Tuesday</h3>

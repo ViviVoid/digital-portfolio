@@ -2,6 +2,19 @@
 Name: Andy Dao
 */
 
+a h1 {
+    /*animation-name: pan-left-right;*/
+    /*animation-duration: 20s;*/
+    /*animation-fill-mode: forwards;*/
+    /*background-size: 150%;*/
+    /*animation: 20s ease-in-out infinite pan-left-right forwards;*/
+    background-image: url(/public/headerBackgroundHover.jpg);
+}
+
+a h1:hover {
+    opacity: 0.8;
+}
+
 p {
     font-size: 16pt;
 }
@@ -155,10 +168,34 @@ h1 {
     }
 }
 
+@keyframes pan-left-right {
+    0% {
+        background-position: 0;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0;
+    }
+}
+
 #mainFlexBody {
     display:grid;
     grid-template-columns: 20% 80%;
     justify-content: space-around;
+}
+
+a {
+    color: inherit !important;
+    text-decoration-color: silver !important;
+}
+
+a:checked {
+    color: inherit;
+    text-decoration-color: silver !important;
 }
 
 #contentPage {
