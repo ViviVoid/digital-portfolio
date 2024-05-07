@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/digital-portfolio/static/css/main.b6f3e446.css",
-    "main.js": "/digital-portfolio/static/js/main.cf050c50.js",
+    "main.css": "/digital-portfolio/static/css/main.b918b7de.css",
+    "main.js": "/digital-portfolio/static/js/main.d2f0e127.js",
     "static/js/453.227f349f.chunk.js": "/digital-portfolio/static/js/453.227f349f.chunk.js",
     "static/media/figma-overview.svg": "/digital-portfolio/static/media/figma-overview.151cf7db198e6a6705f5fd67501cfec5.svg",
     "static/media/profSmaller.jpg": "/digital-portfolio/static/media/profSmaller.fa423969c8c585f6b7eb.jpg",
+    "static/media/headerBackgroundHover.jpg": "/digital-portfolio/static/media/headerBackgroundHover.264d2f33fb7a3f9f2c37.jpg",
     "static/media/headerBackground.jpg": "/digital-portfolio/static/media/headerBackground.73ce39259b18cce454ad.jpg",
     "static/media/headerBackground.png": "/digital-portfolio/static/media/headerBackground.f2d0ba5479dfaea447ff.png",
     "static/media/WordleApp.png": "/digital-portfolio/static/media/WordleApp.3cbf3cf05814e14344ab.png",
@@ -13,12 +14,12 @@
     "static/media/MAIC_Logo.png": "/digital-portfolio/static/media/MAIC_Logo.502d9de1f2927c3f6be9.png",
     "static/media/github-mark.svg": "/digital-portfolio/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "index.html": "/digital-portfolio/index.html",
-    "main.b6f3e446.css.map": "/digital-portfolio/static/css/main.b6f3e446.css.map",
-    "main.cf050c50.js.map": "/digital-portfolio/static/js/main.cf050c50.js.map",
+    "main.b918b7de.css.map": "/digital-portfolio/static/css/main.b918b7de.css.map",
+    "main.d2f0e127.js.map": "/digital-portfolio/static/js/main.d2f0e127.js.map",
     "453.227f349f.chunk.js.map": "/digital-portfolio/static/js/453.227f349f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6f3e446.css",
-    "static/js/main.cf050c50.js"
+    "static/css/main.b918b7de.css",
+    "static/js/main.d2f0e127.js"
   ]
 }
