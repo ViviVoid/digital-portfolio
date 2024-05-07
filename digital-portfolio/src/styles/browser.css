@@ -2,11 +2,12 @@
 Name: Andy Dao
 */
 
-a h1 {
+a h1,a h1:hover, a h1:checked {
+    /*text-decoration-thickness: 1px!important;*/
     /*animation-name: pan-left-right;*/
     /*animation-duration: 20s;*/
     /*animation-fill-mode: forwards;*/
-    /*background-size: 150%;*/
+    background-size: 120%;
     /*animation: 20s ease-in-out infinite pan-left-right forwards;*/
     background-image: url(/public/headerBackgroundHover.jpg);
 }
