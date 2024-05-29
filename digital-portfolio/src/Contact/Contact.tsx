@@ -33,12 +33,16 @@ const Contact: React.FC = () => {
             event.stopPropagation();
         } else {
             event.preventDefault();
+            console.log(event.target.formBasicFirstName.value);
+            console.log(event.target.formBasicLastName.value);
+            console.log(event.target.formBasicEmail.value);
+            console.log(event.target.formBasicContent.value);
+            // console.log((document.getElementById("emailForm") as HTMLFormElement).elements);
             (document.getElementById("emailForm") as HTMLFormElement).reset();
             setShowSuccess(true);
             setTimeout(() => {
                 setShowSuccess(false);}, 1000
             );
-            console.log("Poggers!");
         }
         setValidated(true);
     };
@@ -59,17 +63,18 @@ const Contact: React.FC = () => {
 
                         <Form id={"emailForm"} noValidate validated={validated} onSubmit={handleSubmit}>
                             <Row>
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                                <Form.Group as={Col} className="mb-3" controlId="formBasicFirstName">
                                     {/*<Form.Label>First Name</Form.Label>*/}
                                     <Form.Control
                                         required
                                         type={"text"}
-                                        placeholder="First Name" />
+                                        placeholder="First Name"
+                                    />
                                     <Form.Control.Feedback type="invalid">
                                         Please provide a first name.
                                     </Form.Control.Feedback>
                                 </Form.Group>
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                                <Form.Group as={Col} className="mb-3" controlId="formBasicLastName">
                                     {/*<Form.Label>Last Name</Form.Label>*/}
                                     <Form.Control
                                         required
@@ -97,7 +102,7 @@ const Contact: React.FC = () => {
                                 </Form.Control.Feedback>
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Group className="mb-3" controlId="formBasicContent">
                                 {/*<Form.Label>Message</Form.Label>*/}
                                 <Form.Control
                                     required
