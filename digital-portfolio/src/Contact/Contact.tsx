@@ -14,8 +14,9 @@ import {Link} from "react-router-dom";
 
 //Framework?
 
-interface FormState {
-    name: string;
+class EmailTemplate {
+    firstName: string;
+    lastName: string;
     email: string;
     message: string;
 }
@@ -33,11 +34,18 @@ const Contact: React.FC = () => {
             event.stopPropagation();
         } else {
             event.preventDefault();
-            console.log(event.target.formBasicFirstName.value);
-            console.log(event.target.formBasicLastName.value);
-            console.log(event.target.formBasicEmail.value);
-            console.log(event.target.formBasicContent.value);
-            // console.log((document.getElementById("emailForm") as HTMLFormElement).elements);
+            let message:EmailTemplate = new EmailTemplate();
+            // https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages
+            // Not ideal but I don't want to set up resend and manage hosting my api key
+            message.firstName = event.target.formBasicFirstName.value;
+            message.lastName = event.target.formBasicLastName.value;
+            message.email = event.target.formBasicEmail.value;
+            message.message = event.target.formBasicContent.value;
+            let hiddenIframe = document.createElement("iframe");
+            hiddenIframe.setAttribute("style", "display:none");
+            hiddenIframe.setAttribute("src", createEmail(message));
+            (document.getElementById("emailForm") as HTMLFormElement).insertAdjacentElement("afterend", hiddenIframe);
+            // https://docs.google.com/forms/d/e/1FAIpQLSfoUvKqHU2SsdG6RojczFeu7DR-oPAMGUkfOo-um6ygT2-74g/formResponse?usp=pp_url&entry.386257529=garbageFirstName&entry.583060987=garbageLastName&entry.1031213363=example@email.com&entry.480400840=garbageMessage
             (document.getElementById("emailForm") as HTMLFormElement).reset();
             setShowSuccess(true);
             setTimeout(() => {
@@ -46,6 +54,31 @@ const Contact: React.FC = () => {
         }
         setValidated(true);
     };
+
+    interface IHash {
+        [key: string] : string;
+    }
+    const createEmail = (email:EmailTemplate)  => {
+        // Example Form Response Structure
+        // https://docs.google.com/forms/d/e/1FAIpQLSfoUvKqHU2SsdG6RojczFeu7DR-oPAMGUkfOo-um6ygT2-74g/formResponse?usp=pp_url&
+        // entry.386257529=garbageFirstName
+        // &entry.583060987=garbageLastName
+        // &entry.1031213363=example@email.com
+        // &entry.480400840=garbageMessage
+        let ret:string = "";
+        let entries:IHash = {};
+        entries["firstName"] = "entry.386257529";
+        entries["lastName"] = "entry.583060987";
+        entries["email"] = "entry.1031213363";
+        entries["content"] = "entry.480400840";
+        let root:string =  "https://docs.google.com/forms/d/e/1FAIpQLSfoUvKqHU2SsdG6RojczFeu7DR-oPAMGUkfOo-um6ygT2-74g/formResponse?usp=pp_url&";
+        ret += root;
+        ret += entries["firstName"] + "=" + email.firstName;
+        ret += "&" + entries["lastName"] + "=" + email.lastName;
+        ret += "&" + entries["email"] + "=" + email.email;
+        ret += "&" + entries["content"] + "=" + email.message;
+        return ret;
+    }
 
     return (
         <div id={"mainFlexBody"}>
