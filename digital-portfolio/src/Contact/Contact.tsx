@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
             (document.getElementById("emailForm") as HTMLFormElement).reset();
             setShowSuccess(true);
             setTimeout(() => {
-                setShowSuccess(false);}, 1000
+                setShowSuccess(false);}, 1000,
             );
         }
         setValidated(true);
