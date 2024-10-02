@@ -21,7 +21,7 @@ const SideNavigationBar: React.FC = () => (
        <Link to="/Contact" className={"Side-Navigation-Item"}>
            Contact Me
         </Link>
-       <Link to="https://www.linkedin.com/in/aqd453/details/featured/1714940777634/single-media-viewer/?profileId=ACoAAD4rGP4BtgLUi4EXk_2AfRhcp1THaAA0-IE" target="_blank" rel="noopener noreferrer" className={"Side-Navigation-Item"}>
+       <Link to="https://msoe365-my.sharepoint.com/personal/daoa_msoe_edu/Documents/Documents/Junior_Resume_ATS_AndyDao_2024.pdf" target="_blank" rel="noopener noreferrer" className={"Side-Navigation-Item"}>
            Resume
        </Link>
 
